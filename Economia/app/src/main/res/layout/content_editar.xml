@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.senaijandira.economia.EditarActivity"
+    tools:showIn="@layout/activity_editar"
+    android:orientation="vertical"
+    android:padding="15dp"
+    >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Cadastre sua despesa abaixo"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:text="Categoria:"
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        />
+
+                    <Spinner
+
+                        android:id="@+id/spinner_editar"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:layout_centerHorizontal="true" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:text="Valor:"
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        />
+
+                    <EditText
+                        android:inputType="number"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_valor_editar"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:text="Descrição:"
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        />
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_descricao_editar"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:text="Data:"
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        />
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_data_editar"
+                        android:maxLength="10"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Editar"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/btn_editar"
+                        android:onClick="Editar"
+                        android:layout_marginLeft="20dp"
+                        />
+
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="excluir"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/btn_excluir"
+                        android:onClick="Excluir"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+</LinearLayout>

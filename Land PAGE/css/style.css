@@ -1,0 +1,60 @@
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-image: url("../imagens/investicionni-produkti-header-shutterstock_.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    background-color: #000000;
+    position: fixed;
+}
+
+#logo{
+    height: 100px;
+    width: 150px;
+    background-color: aqua;
+    margin-left: 50px;
+    
+}
+
+#box{
+    height: 100px;
+    width: 100%;
+    
+    
+}
+
+#superior{
+    height: 300px;
+    width: 100%;
+    background-color: #ffffff;
+    opacity: 0.6;
+    
+}
+
+#inferior{
+    height: 200px;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+footer{
+    height: 70px;
+    width: 100%;
+    background-color: blue;
+    
+}
+
+.descricao{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    float: left;
+}
